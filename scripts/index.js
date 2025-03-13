@@ -32,11 +32,11 @@ function generateTable(data) {
     return '<p>Nenhum resultado encontrado.</p>';
   }
 
-  let tableHTML = '<table>';
+  let tableHTML = '<table class="table table-striped table-hover">';
   tableHTML += `<thead>
     <tr>
       <th>Data</th>
-      <th>Responsável</th>
+      <th>Com quem?</th>
     </tr>
   </thead>`;
   tableHTML += '<tbody>';

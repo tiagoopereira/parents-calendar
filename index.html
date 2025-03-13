@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário</title>
+  <script src="./scripts/diffDaysHelper.js"></script>
+  <script src="./scripts/calendar.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      margin: 10px 0;
+    }
+    #result {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exibindo Calendário</h1>
+  <div>
+    <label for="year">Ano:</label>
+    <input type="number" id="year" placeholder="Ano (ex: 2025)" />
+  </div>
+  <div>
+    <label for="month">Mês:</label>
+    <input type="number" id="month" placeholder="Mês (1-12)" />
+  </div>
+  <div>
+    <label for="day">Dia:</label>
+    <input type="number" id="day" placeholder="Dia (1-31)" />
+  </div>
+  <button onclick="displayResults()">Exibir Calendário</button>
+  <div id="result"></div>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>

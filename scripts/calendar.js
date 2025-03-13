@@ -8,7 +8,7 @@ function getCalendar(finalDate) {
 
   let currentParent = parents.father;
 
-  const firstDate = new Date('01-01-2025');
+  const firstDate = new Date(2025, 0, 1);
   console.log('FIRST DATE:', firstDate);
 
   const changeDay = 5;

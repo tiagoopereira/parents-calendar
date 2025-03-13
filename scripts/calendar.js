@@ -27,6 +27,8 @@ function getCalendar(finalDate) {
     firstDate.setDate(firstDate.getDate() + 1);
   }
 
+  console.log('DATES:', dates)
+
   return dates;
 }
 

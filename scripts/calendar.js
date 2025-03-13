@@ -4,16 +4,22 @@ const parents = {
 };
 
 function getCalendar(finalDate) {
+  console.log('FINAL DATE:', finalDate);
+
   let currentParent = parents.father;
 
   const firstDate = new Date('01-01-2025');
+  console.log('FIRST DATE:', firstDate);
+
   const changeDay = 5;
   const diffDays = getDiffDays(firstDate, finalDate);
+  console.log('DIFF DAYS:', diffDays);
 
   const dates = [];
 
   for (let i = 0; i <= diffDays; i++) {
     let weekDay = firstDate.getDay();
+    console.log('WEEK DAY:', weekDay);
 
     if (weekDay === changeDay) {
       currentParent = (currentParent === parents.father) ? parents.mother : parents.father;

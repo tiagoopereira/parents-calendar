@@ -28,7 +28,7 @@ function displayResults() {
 }
 
 function generateTable(data) {
-  if (data.length === 0) {
+  if (!data?.length) {
     return '<p>Nenhum resultado encontrado.</p>';
   }
 
